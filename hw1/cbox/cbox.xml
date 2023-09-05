@@ -2,16 +2,11 @@
 
 <!-- Camera and Rendering Parameters -->
 
-	<integrator type="path">
-		<integer name="max_depth" value="4"/>
-		<integer name="rr_depth" value="5"/>
-		<boolean name="hide_emitters" value="false"/>
-	</integrator>
+	<integrator type="path"/>
+		
 	<sensor type="perspective">
 		<string name="fov_axis" value="x"/>
 		<float name="fov" value="19.999999"/>
-		<float name="principal_point_offset_x" value="0.000000"/>
-		<float name="principal_point_offset_y" value="-0.000000"/>
 		<float name="near_clip" value="0.010000"/>
 		<float name="far_clip" value="10000.000000"/>
 		<transform name="to_world">

@@ -2,11 +2,8 @@
 
 <!-- Camera and Rendering Parameters -->
 
-	<integrator type="path">
-		<integer name="max_depth" value="4"/>
-		<integer name="rr_depth" value="5"/>
-		<boolean name="hide_emitters" value="false"/>
-	</integrator>
+	<integrator type="path"/>
+	
 	<sensor type="perspective">
 		<string name="fov_axis" value="x"/>
 		<float name="fov" value="19.999999"/>
