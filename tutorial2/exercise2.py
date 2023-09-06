@@ -13,5 +13,13 @@ def main(width, length, height):
     return mesh
 
 if __name__ == '__main__':
-    mesh = main(width=50, length=60, height=10.0)
-    mesh.write('box.stl')
+    # box 1
+    mesh = main(width=20, length=100, height=10.0)
+    mesh.write('box1.stl')
+    # box 2
+    mesh = main(width=40, length=40, height=10.0)
+    mesh.write('box2.stl')
+    # box 3
+    mesh = main(width=100, length=60, height=10.0)
+    mesh.write('box3.stl')
+    # -----
