@@ -1,0 +1,16 @@
+<scene version="2.1.0">
+
+  <bsdf type="twosided" id="floor1" name="floor1">
+		<bsdf type="roughplastic">
+      <string name="distribution" value="beckmann"/>
+      <float name="int_ior" value="1.61"/>
+    </bsdf>
+	</bsdf>
+
+	<bsdf type="twosided" id="box1" name="box1">
+		<bsdf type="diffuse">
+      <rgb value="0.725000 0.710000 0.680000" name="reflectance"/>
+    </bsdf>
+	</bsdf>
+
+</scene>
