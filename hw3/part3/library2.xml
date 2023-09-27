@@ -9,13 +9,11 @@
     </bsdf>
 	</bsdf>
 
-  <bsdf type="twosided" id="box2" name="box2">
-		<bsdf type="roughdielectric">
+  <bsdf type="roughdielectric" id="box2" name="box2">
       <string name="distribution" value="beckmann"/>
       <float name="alpha" value="0.1"/>
       <string name="int_ior" value="bk7"/>
       <string name="ext_ior" value="air"/>
     </bsdf>
-	</bsdf>
 
 </scene>
