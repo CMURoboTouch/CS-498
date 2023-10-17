@@ -9,8 +9,3 @@
 `Materials` - Epoxy, Epoxy2PDMS-interface, XPS-565, Aluminum Coating, Shiny Aluminum Coating, Bronze Coating 
 `Cameras` - Raspberry Pi v1, v2, v3 cameras with FoV 60 deg, 120 deg and 160 deg
 
-
-
-
-
-
