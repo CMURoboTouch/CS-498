@@ -47,14 +47,10 @@ if __name__ == '__main__':
 
   maxVal = 1023 # RPIv1 gives out 10bit images
 
-  g = np.load("g_gaussian_reg10_whiteledcolorchecker1.npy")
+  g = np.load("g_gaussian_reg10.npy")
 
   for i, (fn, exp) in enumerate(zip(img_fns, exp_times)):
-    bayer_data = extract_bayer_raw_from_exif(fn)
-    demosaiced_data = demosaic_bayer(bayer_data)
-    ldr_img = np.clip(demosaiced_data, 0, maxVal)
-    ldr_img = np.floor(ldr_img).astype("uint64")
-
+    ldr_img = imread(fn)
     img_list[i,:] = ldr_img
 
 
@@ -63,7 +59,3 @@ if __name__ == '__main__':
   np.save(join(args.folder, f"{args.base}_merged.npy"), hdr)
   # need to scale down due to storage problem; npy data is correct
   imsave(join(args.folder, f"{args.base}_merged.exr"), hdr/1e1)
-  
-  hdr_rz = hdr[::8, ::8]
-  # need to scale down due to storage problem; npy data is correct
-  imsave(join(args.folder, f"{args.base}_rz_merged.exr"), hdr_rz/1e1)

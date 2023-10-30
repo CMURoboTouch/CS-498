@@ -73,4 +73,4 @@ if __name__ == '__main__':
   plt.title("%s%d"%(weight_name,reg))
   plt.savefig('%s%d.png'%(weight_name, reg))
   plt.show()
-  np.save("g_%s_reg%d_%s.npy"%(weight_name, reg, args.base), g)
+  np.save("g_%s_reg%d.npy"%(weight_name, reg), g)
